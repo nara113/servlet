@@ -22,7 +22,7 @@ public class MemberSaveServlet extends HttpServlet {
 
         Member member = new Member(username, age);
         memberRepository.save(member);
-        
+
         resp.setContentType("text/html");
         resp.setCharacterEncoding("utf-8");
 
